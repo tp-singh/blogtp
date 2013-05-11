@@ -1,0 +1,24 @@
+<div id="header-wrap">
+	<div id="header"> <a name="top"></a>
+		<h1 id="logo-text"><%= link_to AppConfig.app_name, root_path %></h1>
+		<p id="slogan">Just Another Ruby on Rails Blog Site... </p>
+		<div  id="nav">
+			<ul>
+				<li id="current"><%= link_to "Home", root_path %></li>
+				<li><a href="#">Style Demo</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Archives</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<p id="rss"> <a href="#">Grab the RSS feed</a> </p>
+		<form id="quick-search" method="get" action="#">
+			<fieldset class="search">
+				<label for="qsearch">Search:</label>
+				<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." />
+				<button class="btn">Search</button>
+			</fieldset>
+		</form>
+	</div>
+</div>
