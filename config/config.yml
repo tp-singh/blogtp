@@ -1,0 +1,11 @@
+production: &defaults
+  key: value
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
