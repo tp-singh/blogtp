@@ -8,12 +8,15 @@
 		<p><%= link_to "continue reading >>", blog_path(blog), class: "more" %></p>
 	</div>
 	<div class="left">
-		<p class="dateinfo">JAN<span>31</span></p>
+		<p class="dateinfo">
+			<%= blog.updated_at.strftime("%^b")%>
+			<span><%= blog.updated_at.strftime("%d")%></span>
+		</p>
 		<div class="post-meta">
 			<h4>Post Info</h4>
 			<ul>
 			  <li class="user"><a href="#">Erwin</a></li>
-			  <li class="time"><a href="#">12:30 PM</a></li>
+			  <li class="time"><%= blog.updated_at.strftime("%I:%M %p")%></li>
 			  <li class="comment"><a href="#">2 Comments</a></li>
 			  <li class="permalink"><%= link_to "Permanlink", blog_url(blog) %></li>
 			</ul>
